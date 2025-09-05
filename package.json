@@ -1,0 +1,27 @@
+{
+  "name": "appointment-booking-platform",
+  "version": "1.0.0",
+  "description": "A web-based platform for local service providers to manage appointments",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "appointment",
+    "booking",
+    "service-providers",
+    "stripe"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "mongodb": "^6.19.0"
+  }
+}
